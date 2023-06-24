@@ -13,12 +13,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class CardDeliveryTest {
-    @BeforeEach
-    void shouldTest() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
-    }
-    
     public static String setLocalDate(int days) {
         return LocalDate.now().plusDays(days).format(DateTimeFormatter.ofPattern("dd.MM.yyyy",
                 new Locale("ru")));
