@@ -8,6 +8,8 @@ branches:
 
 build: off
 
+run: --no-cache
+
 install:
   - java -jar ./artifacts/app-card-delivery.jar &
 
